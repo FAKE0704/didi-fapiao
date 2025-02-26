@@ -99,7 +99,7 @@ def process_pdf(a):
                     if match:
                         car_type = (match.group(1).strip().split())
                         if len(car_type) == 1:
-                            current_record.append(car_type)
+                            current_record.append(car_type[0])
                         elif len(car_type) == 2:
                             current_record.append(car_type[0])
                             current_record.append(car_type[1])
